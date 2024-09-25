@@ -1,0 +1,122 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nunito {
+    font-family: "Nunito", sans-serif;
+}
+
+.old-standard-tt-regular {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+}
+
+.old-standard-tt-bold {
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+}
+
+.old-standard-tt-regular-italic {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    background-color: #f0f0f0; /* Un color de fondo opcional para contrastar */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido dentro de wrapper */
+}
+
+.fondo-tarjeta {
+    width: 900px; /* Ajusta según sea necesario */
+    max-width: 100%; /* Asegura que no se desborde en pantallas pequeñas */
+    height: auto; /* Permite que la altura se ajuste al contenido */
+    min-height: 1900px; /* Establece una altura mínima para que se vea bien */
+    background: url('/img/v731-ning-09f.jpg') no-repeat center center; /* Centra la imagen */
+    background-size: contain; /* Asegura que la imagen cubra el área */
+    text-align: center;
+    padding: 20px; /* Espacio interno para el contenido */
+    border-radius: 10px; /* Esquinas redondeadas opcionalmente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra opcional para darle profundidad */
+    display: flex; /* Habilita el uso de flexbox */
+    flex-direction: column; /* Apila los elementos en columna */
+    align-items: center;                        /* Centra verticalmente los elementos */
+}
+
+.encabezado{
+    margin-top: 250px;
+}
+
+.encabezado h1{
+    font-size: 9.5em;
+}
+
+.encabezado p{
+    font-size: 3em;
+}
+
+.reproductor-musica {
+    margin-top: 20px; /* Espacio entre el encabezado y el reproductor */
+    backdrop-filter: blur(8px);
+    width: 80%; /* Ajusta el ancho del reproductor */
+    max-width: 500px; /* Asegura que no se desborde en pantallas pequeñas */
+    display: flex; /* Activa flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    padding: 20px; /* Espacio interno opcional */
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color: rgba(0, 0, 0, 0.027); /* Fondo opcional */
+}
+
+
+
+.reproductor-musica input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Elimina el estilo por defecto */
+    appearance: none; /* Elimina el estilo por defecto */
+    width: 20px; /* Ancho del control deslizante */
+    height: 20px; /* Alto del control deslizante */
+    border-radius: 50%; /* Esquinas redondeadas */
+    background: #b8860b; /* Color dorado para el pulgar */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.reproductor-musica input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Ancho del control deslizante */
+    height: 20px; /* Alto del control deslizante */
+    border-radius: 50%; /* Esquinas redondeadas */
+    background: #b8860b; /* Color dorado para el pulgar */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.controles {
+    display: flex; /* Apila los botones en fila */
+    justify-content: center; /* Centra los botones */
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.controles button {
+    font-size: 2em; /* Ajusta el tamaño de los iconos */
+    padding: 10px; /* Espacio interno para los botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    color: #b8860b;
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+/* Agrega más estilos según sea necesario */
